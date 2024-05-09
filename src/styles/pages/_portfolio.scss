@@ -1,0 +1,224 @@
+.portfolio {
+  .portfolioContent {
+    display: flex;
+    flex-direction: column;
+    .radioDisplay {
+      padding: 0.4rem;
+      text-transform: uppercase;
+      color: $color-4;
+      display: flex;
+      gap: 5%;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      border-radius: $borderRadius;
+      height: 9%;
+      margin-bottom: 0.2rem;
+      li {
+        display: flex;
+        justify-content: flex-start;
+        gap: 7%;
+        width: 120px;
+        padding: 0.3rem;
+        cursor: pointer;
+        input,
+        label {
+          cursor: pointer;
+        }
+      }
+    }
+    .projects {
+      height: 90%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 50% 50%;
+      align-items: center;
+      justify-items: center;
+      width: 100%;
+      border-radius: $borderRadius;
+      .project {
+        margin: 0.4rem;
+        display: flex;
+        gap: 2%;
+        padding: 0.4rem;
+        background-color: $color-4;
+        width: 90%;
+        height: 94%;
+        border-radius: $borderRadius;
+        flex-direction: column;
+        justify-content: space-around;
+        box-shadow: $shadow;
+        .icons {
+          color: $color-1;
+          display: flex;
+          justify-content: center;
+          gap: 13%;
+          height: 30px;
+          svg {
+            width: 30px;
+            height: 30px;
+          }
+        }
+        h3 {
+          color: $color-1;
+        }
+        a {
+          display: contents;
+          img {
+            width: 95%;
+            height: 50%;
+            margin-inline: auto;
+            height: 140px;
+            object-fit: cover;
+            border-radius: $borderRadius;
+            box-shadow: $shadow;
+            &:hover {
+              scale: 1.015;
+              box-shadow: $shadowHover;
+            }
+          }
+        }
+        .infos {
+          display: flex;
+          align-items: center;
+          gap: 5%;
+          color: $color-1;
+          padding-top: 0.5rem;
+          margin-inline: auto;
+          height: 30px;
+          cursor: pointer;
+          svg {
+            width: 25px;
+            height: 25px;
+            &:hover {
+              scale: 1.1;
+            }
+          }
+        }
+        .showInfos {
+          background-color: rgb(41 28 82 / 83%);
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          z-index: 1;
+          &.hide {
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+            transition: all ease-in 0.2s;
+          }
+          &.visible {
+            position: absolute;
+            opacity: 1;
+            visibility: visible;
+            transition: all ease-in 0.2s;
+          }
+          .infoContent {
+            position: absolute;
+            padding: 1.5rem;
+            left: 15%;
+            top: 20%;
+            width: 70%;
+            height: auto;
+            background-color: $color-1;
+            border-radius: $borderRadius;
+            box-shadow: $shadowModal;
+            color: $white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            .head {
+              width: 90%;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              .linkContent {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 60%;
+                a {
+                  display: block;
+                  margin: 0.3rem;
+                }
+              }
+            }
+            p {
+              margin-top: 1.6rem;
+              margin-bottom: 1.6rem;
+              width: 94%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .portfolio {
+    .portfolioContent {
+      min-height: 0;
+      height: 89vh;
+      .radioDisplay {
+        flex-wrap: wrap;
+      }
+      .projects {
+        height: 90%;
+        .project {
+          width: 70%;
+          .showInfos {
+            .infoContent {
+              padding: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .portfolio {
+    .portfolioContent {
+      height: auto;
+      .projects {
+        display: flex;
+        flex-direction: column;
+        &:after {
+          height: 100%;
+        }
+        .project {
+          .showInfos {
+            .infoContent {
+              padding: 0.5rem;
+              .head {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                h2 {
+                  font-size: 20px;
+                }
+                .linkContent {
+                  flex-direction: column;
+                  a {
+                    font-size: 14px;
+                  }
+                }
+              }
+              p {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+.contact {
+  .contactContent {
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .content {
+      width: 80%;
+      height: 90%;
+      background: $color-4;
+      border-radius: 25px;
+      padding: 0.8rem;
+      margin: 0.5rem;
+      @media screen and (max-width: 580px) {
+        padding: 0.4rem;
+      }
+      .contactBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3%;
+        height: 100%;
+        h1 {
+          font-size: 42px;
+          font-family: $font-1;
+          font-weight: 500;
+          color: $color-1;
+          text-shadow: 1px 1px 1px $black;
+          @media screen and (max-width: 580px) {
+            font-size: 30px;
+          }
+        }
+        .contactForm {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 3%;
+          height: 100%;
+          width: 100%;
+          input {
+            height: 25px;
+          }
+          .infoName,
+          .infoContact {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            @media screen and (max-width: 580px) {
+              flex-direction: column;
+            }
+            .lastName,
+            .firstName,
+            .email,
+            .phone {
+              display: flex;
+              flex-direction: column;
+              width: 50%;
+              @media screen and (max-width: 580px) {
+                width: 100%;
+              }
+            }
+
+            input {
+              width: 90%;
+              @media screen and (max-width: 580px) {
+                width: 95%;
+              }
+            }
+          }
+          .objet,
+          .message {
+            width: 100%;
+          }
+          label {
+            width: 50%;
+            color: $color-1;
+            font-size: 20px;
+            font-weight: 700;
+          }
+          input,
+          textarea {
+            padding: 5px;
+            width: 95%;
+            background-color: $color-1;
+            color: $white;
+            border-radius: 5px;
+            &::placeholder {
+              color: $white;
+              opacity: 1;
+            }
+            &:placeholder-shown {
+              border: 1px solid $white;
+            }
+          }
+        }
+        span {
+          color: $color-2;
+        }
+        p {
+          color: $color-1;
+          align-self: flex-start;
+        }
+        .button {
+          margin-inline: auto;
+          min-width: 100px;
+          width: 30%;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "skills": [
+    { "id": 1, "value": "JS", "xp": 2 },
+    { "id": 2, "value": "CSS", "xp": 2 },
+    { "id": 3, "value": "React", "xp": 1.5 },
+    { "id": 4, "value": "Git", "xp": 1.5 },
+    { "id": 5, "value": "API REST", "xp": 1.2 },
+    { "id": 6, "value": "Redux", "xp": 0.7 },
+    { "id": 7, "value": "NodeJS", "xp": 0.5 }
+  ]
+}
