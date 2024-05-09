@@ -63,7 +63,7 @@ a:visited {
 .contact {
   position: sticky;
   display: flex;
-  background-color: $color-5;
+  background-color: black;
   @media screen and (max-width: 850px) {
     display: block !important;
   }
@@ -74,12 +74,11 @@ a:visited {
 .contactContent {
   margin-left: 0.4rem;
   background: linear-gradient(
-    126deg,
-    $color-1 25%,
-    $color-2 54%,
-    transparent 79%
+    90deg,
+    #000000 32%,
+    #081498 60%,
+    transparent 106%
   );
-  // background: linear-gradient(115deg, $color-1 50%, transparent 100%);
   min-height: $min-height;
   width: 100%;
   border-radius: $borderRadius;
