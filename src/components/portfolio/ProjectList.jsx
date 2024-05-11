@@ -6,10 +6,10 @@ const ProjectList = () => {
   const radios = [
     { id: 1, value: "JavaScript" },
     { id: 2, value: "css" },
-    { id: 3, value: "gitHub" },
+    { id: 3, value: "React" },
     { id: 4, value: "Html" },
   ];
-  const [selectedRadio, setSelectRadio] = useState("JavaScript");
+  const [selectedRadio, setSelectRadio] = useState("css");
 
   const handleRadio = (e) => {
     let radio = e.target.value;

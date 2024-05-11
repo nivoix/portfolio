@@ -118,8 +118,11 @@
           .infoContent {
             position: absolute;
             padding: 1.5rem;
-            left: 15%;
-            top: 20%;
+            // left: 15%;
+            // top: 20%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             width: 70%;
             height: auto;
             background-color: $color-1;
@@ -161,8 +164,8 @@
 @media screen and (max-width: 850px) {
   .portfolio {
     .portfolioContent {
-      min-height: 0;
-      height: 89vh;
+      // min-height: 0;
+      // height: 89vh;
       .radioDisplay {
         flex-wrap: wrap;
       }

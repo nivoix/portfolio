@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+// import { Outlet } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import { FaHome } from "@react-icons/all-files/fa/FaHome";
 import { IoBriefcaseSharp } from "@react-icons/all-files/io5/IoBriefcaseSharp";
@@ -87,9 +87,9 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <main>
+      {/* <main>
         <Outlet />
-      </main>
+      </main> */}
     </>
   );
 };

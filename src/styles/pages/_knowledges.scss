@@ -182,8 +182,12 @@
 @media screen and (max-width: 850px) {
   .knowledges {
     .knowledgesContent {
-      // min-height: 89vh;
       .content {
+        .rechartsContent {
+          h3 {
+            font-size: 18px;
+          }
+        }
         .otherSkills {
           .listContent {
             margin-top: 8px;
