@@ -29,21 +29,19 @@
     }
     .projects {
       height: 90%;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 50% 50%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       align-items: center;
-      justify-items: center;
       width: 100%;
-      border-radius: $borderRadius;
       .project {
         margin: 0.4rem;
         display: flex;
         gap: 2%;
         padding: 0.4rem;
         background-color: $color-4;
-        width: 90%;
-        height: 94%;
+        width: 31%;
+        height: 47%;
         border-radius: $borderRadius;
         flex-direction: column;
         justify-content: space-around;
@@ -170,9 +168,9 @@
         flex-wrap: wrap;
       }
       .projects {
-        height: 90%;
+        // height: 90%;
         .project {
-          width: 70%;
+          width: 45%;
           .showInfos {
             .infoContent {
               padding: 1rem;

@@ -181,26 +181,67 @@
 }
 @media screen and (max-width: 850px) {
   .knowledges {
+    .sidebar {
+      height: 10%;
+    }
     .knowledgesContent {
+      height: 89%;
       .content {
         .rechartsContent {
           h3 {
             font-size: 18px;
           }
         }
-        .otherSkills {
-          .listContent {
+        .otherSkills,
+        .experience {
+          .listContent,
+          .formContent {
             margin-top: 8px;
           }
         }
         .quality {
-          .softSkills,
-          .hobbies {
-            height: 40%;
-            .listQuality {
+          .qualityContent {
+            .softSkills,
+            .hobbies {
               height: 40%;
-              padding: 0.5rem;
-              font-size: 14px;
+              .listQuality {
+                height: 40%;
+                padding: 0 0.5rem 0 0.5rem;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (orientation: landscape) {
+    .knowledges {
+      height: 150vh;
+      .knowledgesContent {
+        .content {
+          .experience {
+            .formContent {
+              height: 90%;
+              justify-content: space-around;
+              .form-1,
+              .form-2 {
+                height: 40%;
+                .infoForm {
+                  height: 40%;
+                }
+              }
+            }
+          }
+          .quality {
+            .qualityContent {
+              .softSkills,
+              .hobbies {
+                height: 53%;
+                h3 {
+                  margin: 0.2rem 0 0 0;
+                }
+              }
             }
           }
         }
@@ -220,7 +261,7 @@
           display: flex;
           justify-content: flex-end;
           align-items: center;
-          padding: 0.4rem;
+          padding: 0.2rem 0.4rem;
           width: 97%;
           height: 23%;
           h3 {
@@ -235,7 +276,8 @@
         }
         .rechartsContent {
           h3 {
-            left: -30px;
+            left: -46px;
+            top: 32%;
           }
           .graphContent {
             font-size: 12px;
@@ -249,6 +291,14 @@
             margin-top: 3%;
             width: 90%;
             height: 100%;
+            @media (orientation: landscape) {
+              flex-direction: row;
+              align-items: center;
+              width: 88%;
+              margin-inline: auto;
+              margin-top: 0;
+            }
+
             .titleFormContent {
               h4 {
                 font-size: 16px;
@@ -300,7 +350,7 @@
               margin: 0;
               h3 {
                 width: 15%;
-                padding-inline-start: 12%;
+                padding-inline-start: 6%;
               }
               .listQuality {
                 gap: 2px;
@@ -309,6 +359,25 @@
                 height: 100%;
               }
             }
+          }
+        }
+      }
+    }
+  }
+  @media (orientation: landscape) {
+    .knowledges {
+      .knowledgesContent {
+        .content {
+          .experience {
+            .formContent {
+              .form-1,
+              .form-2 {
+                height: 80%;
+              }
+            }
+          }
+          .otherSkills {
+            height: 24%;
           }
         }
       }
