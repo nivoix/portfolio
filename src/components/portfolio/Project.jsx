@@ -11,6 +11,7 @@ const Project = (props) => {
 
   const handleInfo = () => {
     setShowInfo(!showInfo);
+    console.log(MouseEvent.offsetX);
   };
   return (
     <div className="project">

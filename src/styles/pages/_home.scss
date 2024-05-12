@@ -43,7 +43,7 @@
   .home {
     .homeContent {
       margin: 0 !important;
-      min-height: 89vh;
+      min-height: 89svh;
       .content {
         top: 14%;
       }
@@ -58,7 +58,7 @@
           left: 6%;
           .pdf {
             position: absolute;
-            top: 92%;
+            top: 82%;
             left: 54%;
             margin-top: 0;
           }
@@ -71,7 +71,7 @@
 @media screen and (max-width: 580px) {
   .home {
     .homeContent {
-      min-height: 90.9vh;
+      min-height: 92svh;
       &:after {
         background: url(/home.jpg) no-repeat 60% 50% / cover !important;
       }

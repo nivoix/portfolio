@@ -106,6 +106,7 @@
               min-height: 48%;
               justify-content: space-around;
               align-items: center;
+              // align-content: center;
               li {
                 width: fit-content;
               }
@@ -185,7 +186,6 @@
       height: 10%;
     }
     .knowledgesContent {
-      height: 89%;
       .content {
         .rechartsContent {
           h3 {
@@ -217,7 +217,7 @@
   }
   @media (orientation: landscape) {
     .knowledges {
-      height: 150vh;
+      height: 112svh;
       .knowledgesContent {
         .content {
           .experience {
@@ -252,7 +252,6 @@
 @media screen and (max-width: 580px) {
   .knowledges {
     .knowledgesContent {
-      min-height: 90.9vh;
       .content {
         .rechartsContent,
         .experience,
@@ -378,6 +377,37 @@
           }
           .otherSkills {
             height: 24%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-height: 480px) {
+  @media (orientation: landscape) {
+    .knowledges {
+      height: 169svh;
+      .knowledgesContent {
+        min-height: 151svh;
+        .content {
+          .quality {
+            .qualityContent {
+              .hobbies,
+              .softSkills {
+                .listQuality {
+                  height: 75%;
+                  gap: 0;
+                  align-content: center;
+                  flex-direction: column;
+                  align-items: normal;
+                }
+              }
+              .hobbies {
+                .listQuality {
+                  padding-block-start: 5%;
+                }
+              }
+            }
           }
         }
       }

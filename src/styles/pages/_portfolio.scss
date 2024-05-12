@@ -115,9 +115,8 @@
           }
           .infoContent {
             position: absolute;
+            margin: 0 auto;
             padding: 1.5rem;
-            // left: 15%;
-            // top: 20%;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -162,13 +161,10 @@
 @media screen and (max-width: 850px) {
   .portfolio {
     .portfolioContent {
-      // min-height: 0;
-      // height: 89vh;
       .radioDisplay {
         flex-wrap: wrap;
       }
       .projects {
-        // height: 90%;
         .project {
           width: 45%;
           .showInfos {
@@ -188,7 +184,6 @@
       height: auto;
       .projects {
         display: flex;
-        flex-direction: column;
         &:after {
           height: 100%;
         }
@@ -218,6 +213,18 @@
               }
             }
           }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 580px) {
+  .portfolio {
+    .portfolioContent {
+      .projects {
+        flex-direction: column;
+        .project {
+          width: 70%;
         }
       }
     }
