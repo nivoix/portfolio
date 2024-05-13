@@ -210,6 +210,11 @@
                 font-size: 14px;
                 gap: 0;
                 align-content: center;
+                flex-direction: column;
+                justify-content: center;
+                ul {
+                  width: 70%;
+                }
               }
             }
           }
@@ -233,6 +238,13 @@
                   height: 40%;
                 }
               }
+            }
+          }
+          .otherSkills,
+          .experience {
+            .listContent,
+            .formContent {
+              margin-top: 0;
             }
           }
           .quality {
@@ -355,9 +367,12 @@
               }
               .listQuality {
                 gap: 2px;
-                justify-content: flex-start;
+                justify-content: center;
                 align-items: center;
                 height: 100%;
+                ul {
+                  width: 100%;
+                }
               }
             }
           }
@@ -412,6 +427,16 @@
             }
           }
         }
+      }
+    }
+  }
+}
+@media screen and (max-height: 300px) {
+  @media (orientation: landscape) {
+    .knowledges {
+      height: 230svh;
+      .knowledgesContent {
+        min-height: 206svh;
       }
     }
   }
