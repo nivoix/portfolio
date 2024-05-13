@@ -224,7 +224,7 @@
   }
   @media (orientation: landscape) {
     .knowledges {
-      height: 112svh;
+      height: 112vh;
       .knowledgesContent {
         .content {
           .experience {
@@ -403,9 +403,9 @@
 @media screen and (max-height: 480px) {
   @media (orientation: landscape) {
     .knowledges {
-      height: 169svh;
+      height: 169vh;
       .knowledgesContent {
-        min-height: 151svh;
+        min-height: 151vh;
         .content {
           .quality {
             .qualityContent {
@@ -434,9 +434,9 @@
 @media screen and (max-height: 300px) {
   @media (orientation: landscape) {
     .knowledges {
-      height: 230svh;
+      height: 230;
       .knowledgesContent {
-        min-height: 206svh;
+        min-height: 206vh;
       }
     }
   }

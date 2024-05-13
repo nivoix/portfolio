@@ -43,7 +43,7 @@
   .home {
     .homeContent {
       margin: 0 !important;
-      min-height: 89svh;
+      min-height: 89vh;
       .content {
         top: 14%;
       }
@@ -72,7 +72,7 @@
 @media screen and (max-width: 580px) {
   .home {
     .homeContent {
-      min-height: 92svh;
+      min-height: 92vh;
       &:after {
         background: url(/home.jpg) no-repeat 60% 50% / cover !important;
       }
