@@ -1,8 +1,12 @@
+import { useState } from "react";
 import Navbar from "../components/Navbar";
 import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
+import Modal from "../components/Modal";
 
 const Contact = () => {
+  const [isopen, setIsOpen] = useState(false);
+
   const {
     register,
     handleSubmit,
@@ -13,19 +17,14 @@ const Contact = () => {
     const form = e.target;
     e.preventDefault();
     emailjs
-      .sendForm(
-        import.meta.env.VITE_REACT_APP_SERVICE_ID,
-        import.meta.env.VITE_REACT_APP_TEMPLATE_ID,
-        form,
-        {
-          publicKey: import.meta.env.VITE_REACT_APP_PUBLIC_KEY,
-        }
-      )
+      .sendForm("portfolio-contact", "template_6si0w3r", form, {
+        publicKey: "gnwD5jSTciYlYRTpA",
+      })
       .then(
         () => {
           console.log("SUCCESS!");
-          alert("message envoyé!");
           form.reset();
+          setIsOpen(true);
         },
         (error) => {
           console.log("FAILED...");
@@ -160,6 +159,7 @@ const Contact = () => {
                 Envoyer
               </button>
             </form>
+            <Modal isopen={isopen} setIsOpen={setIsOpen} />
           </div>
         </div>
       </div>

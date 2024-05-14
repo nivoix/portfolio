@@ -1,10 +1,10 @@
 .sidebar {
-  background: black;
+  background: $black-background;
   font-family: $font-1;
   height: 100%;
   min-height: $min-height;
   width: 264px;
-  border-radius: $borderRadius;
+  // border-radius: $borderRadius;
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
@@ -119,12 +119,13 @@
     width: 100%;
     display: flex;
     min-height: 50px;
-    margin-bottom: 0.2rem;
+    // margin-bottom: 0.2rem;
     background: linear-gradient(
       90deg,
-      #000000 32%,
+      $black-background 32%,
       #081498 60%,
-      transparent 106%
+      #0d0f1b 97%,
+      transparent 131%
     );
     .profil,
     .socialNetwork {
