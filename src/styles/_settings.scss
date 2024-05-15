@@ -9,12 +9,17 @@ $white: #ddd;
 $black: #333;
 $black-background: #000000;
 // $black-background: #2522bc;
+$black-background-card: #000000;
+// $black-background-card: #000000b8;
+// $black-background-card: #00000000;
+$border-card: 1px solid $white;
 
 $borderRadius: 25px;
 $shadow-hover: 5px 7px 4px #333;
 $shadow: 2px 3px 4px #333;
 $shadow-button: 2px 2px 1px #000;
 $shadow-modal: 7px 7px 6px #000;
+$shadow-card: 4px 4px 6px #59f6dc;
 $min-height: 100vh;
 
 @mixin verticalCenter {
@@ -39,12 +44,10 @@ body {
   color: $black;
   width: auto;
   height: 30px;
-  background-color: $color-5;
+  background-color: $color-3;
   border-radius: $borderRadius;
   cursor: pointer;
   &:hover {
-    box-shadow: $shadow-button;
-    scale: 1.02;
     background-color: $color-4;
   }
 }
@@ -83,7 +86,6 @@ a:visited {
   );
   min-height: $min-height;
   width: 100%;
-  // border-radius: $borderRadius;
   position: relative;
   overflow: hidden;
 

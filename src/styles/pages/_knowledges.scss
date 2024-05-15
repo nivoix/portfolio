@@ -16,7 +16,8 @@
         width: 45%;
         height: 46%;
         border-radius: $borderRadius;
-        border: 2px solid white;
+        border: $border-card;
+        background-color: $black-background-card;
         font-size: 16px;
         h3 {
           color: $color-4;
@@ -31,7 +32,6 @@
       .experience,
       .otherSkills,
       .quality {
-        color: $white;
         padding-inline: 1rem;
         .formContent {
           height: 90%;
@@ -54,11 +54,11 @@
           border-radius: $borderRadius;
           background-color: rgb(99, 164, 233, 0.15);
           h4 {
-            color: $color-5;
+            color: $white;
           }
         }
         .infoForm {
-          height: 65%;
+          height: 52%;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -66,6 +66,7 @@
           h5,
           p {
             font-size: 22px;
+            color: $color-3;
           }
         }
         .listContent {
@@ -78,7 +79,7 @@
             flex-direction: column;
             justify-content: space-around;
             height: 100%;
-            color: $color-5;
+            color: $color-3;
           }
           .list1 {
             padding-inline-start: 4px;
@@ -101,7 +102,7 @@
               flex-wrap: wrap;
               border-radius: 25px;
               background-color: rgba(99, 164, 233, 0.15);
-              color: #36d0ea;
+              color: $color-3;
               height: auto;
               min-height: 48%;
               justify-content: space-around;
@@ -130,7 +131,7 @@
         .experience,
         .otherSkills,
         .quality {
-          width: 33%;
+          width: 31%;
           height: 49%;
           padding-inline: 0.5rem;
           h3 {
@@ -138,7 +139,7 @@
             margin: 0.2rem 0 0.2rem 0;
           }
           .formContent {
-            height: 71%;
+            height: 100%;
             margin-top: 20px;
             h4 {
               font-size: 18px;
@@ -155,6 +156,7 @@
           .listContent {
             flex-direction: column;
             margin-top: 20px;
+            height: 75%;
             ul {
               margin-inline: auto;
               li {

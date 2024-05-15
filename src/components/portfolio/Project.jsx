@@ -1,3 +1,4 @@
+/* eslint-disable no-constant-condition */
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/prop-types */
 import { useState } from "react";
@@ -11,7 +12,8 @@ const Project = (props) => {
 
   const handleInfo = () => {
     setShowInfo(!showInfo);
-    console.log(MouseEvent.offsetX);
+    const body = document.body;
+    body.style.overflowY = `${showInfo ? "" : "hidden"}`;
   };
   return (
     <div className="project">
@@ -59,7 +61,7 @@ const Project = (props) => {
             </div>
           </div>
           <p>{info}</p>
-          <div className="button return" onClick={handleInfo}>
+          <div className="button return" onClick={handleInfo} autoFocus>
             Retourner sur la page
           </div>
         </div>

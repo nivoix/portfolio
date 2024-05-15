@@ -39,17 +39,16 @@
         display: flex;
         gap: 2%;
         padding: 0.4rem;
-        border: 2px solid #59f6dc;
+        background-color: $black-background-card;
+        border: $border-card;
+        box-shadow: $shadow-card;
         width: 31%;
         height: 47%;
         border-radius: $borderRadius;
         flex-direction: column;
         justify-content: space-around;
-        // box-shadow: 5px 5px 1px rgb(15, 15, 15);
-        // box-shadow: -6px -6px 1px -1px rgb(15, 15, 15);
-        box-shadow: 3px 2px 1px #59f6dc;
         .icons {
-          color: $color-4;
+          color: $white;
           display: flex;
           justify-content: center;
           gap: 13%;
@@ -60,21 +59,19 @@
           }
         }
         h3 {
-          color: $color-5;
+          color: $color-2;
+          margin-inline: auto;
         }
         a {
           display: contents;
           img {
             width: 95%;
-            height: 50%;
             margin-inline: auto;
             height: 124px;
             object-fit: cover;
             border-radius: $borderRadius;
-            box-shadow: $shadow;
             &:hover {
               scale: 1.015;
-              box-shadow: $shadow-hover;
             }
           }
         }
@@ -82,51 +79,48 @@
           display: flex;
           align-items: center;
           gap: 5%;
-          color: $color-5;
+          color: $color-3;
           padding-top: 0.5rem;
           margin-inline: auto;
           height: 30px;
           cursor: pointer;
+          &:hover svg {
+            scale: 1.1;
+          }
           svg {
             width: 25px;
             height: 25px;
-            &:hover {
-              scale: 1.1;
-            }
           }
         }
         .showInfos {
           background-color: #000000b0;
-          position: absolute;
-          width: 150%;
-          height: 100%;
+          width: 100%;
+          height: 100vh;
+
           top: 0;
-          left: -50%;
-          z-index: 1;
+          left: 0;
           &.hide {
             position: absolute;
             opacity: 0;
             visibility: hidden;
-            transition: all ease-in 0.2s;
           }
           &.visible {
-            position: absolute;
+            position: fixed;
             opacity: 1;
             visibility: visible;
             transition: all ease-in 0.2s;
+            overflow-y: hidden;
           }
           .infoContent {
-            position: fixed;
             margin: 0 auto;
+            margin-block-start: 180px;
             padding: 1.5rem;
-            top: 50%;
-            left: 36%;
-            transform: translate(-30%, -50%);
             width: 70%;
             height: auto;
-            background-color: #000000eb;
+            background-color: #000000;
             border-radius: $borderRadius;
-            box-shadow: $shadow-modal;
+            border: $border-card;
+            box-shadow: $shadow-card;
             color: $white;
             display: flex;
             flex-direction: column;
@@ -137,6 +131,9 @@
               display: flex;
               justify-content: space-between;
               align-items: center;
+              h2 {
+                color: $color-4;
+              }
               .linkContent {
                 display: flex;
                 justify-content: space-around;
@@ -178,19 +175,37 @@
     }
   }
 }
+@media screen and (max-width: 765px) {
+  .portfolio {
+    .portfolioContent {
+      .projects {
+        .project {
+          .showInfos {
+            .infoContent {
+              margin-block-start: 110px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 @media screen and (max-width: 580px) {
   .portfolio {
     .portfolioContent {
       height: auto;
       .projects {
         display: flex;
+        flex-direction: column;
         &:after {
           height: 100%;
         }
         .project {
+          width: 70%;
           .showInfos {
             .infoContent {
               padding: 0.5rem;
+              margin-block-start: 50px;
               .head {
                 width: 100%;
                 display: flex;
@@ -218,13 +233,17 @@
     }
   }
 }
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 425px) {
   .portfolio {
     .portfolioContent {
       .projects {
-        flex-direction: column;
         .project {
-          width: 70%;
+          .showInfos {
+            .infoContent {
+              margin-block-start: 15px;
+              width: 80%;
+            }
+          }
         }
       }
     }

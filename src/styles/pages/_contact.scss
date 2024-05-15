@@ -3,7 +3,7 @@
     color: $white;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     .content {
       width: 80%;
       height: 90%;
@@ -28,7 +28,7 @@
           font-size: 42px;
           font-family: $font-1;
           font-weight: 500;
-          color: $color-3;
+          color: $color-4;
           text-shadow: 1px 1px 1px $black;
           @media screen and (max-width: 580px) {
             font-size: 30px;
@@ -72,22 +72,26 @@
           }
           .objet,
           .message {
+            display: flex;
+            flex-direction: column;
             width: 100%;
           }
           label {
             width: 50%;
-            color: $color-3;
+            color: $color-2;
             font-size: 20px;
             font-weight: 700;
+            margin-block-start: 10px;
           }
           input,
           textarea {
             padding: 5px;
             width: 95%;
-            background-color: $black-background;
+            background-color: $black-background-card;
             color: $white;
             border-radius: 5px;
-            border: 1px solid $color-3;
+            border: $border-card;
+            box-shadow: $shadow-card;
             outline: none;
             &::placeholder {
               color: $white;
@@ -101,8 +105,10 @@
         p {
           color: $color-3;
           align-self: flex-start;
+          margin-block-start: 10px;
         }
         .button {
+          margin-block-start: 10px;
           margin-inline: auto;
           min-width: 100px;
           width: 30%;
