@@ -86,6 +86,7 @@
           cursor: pointer;
           &:hover svg {
             scale: 1.1;
+            color: $color-4;
           }
           svg {
             width: 25px;
@@ -138,6 +139,7 @@
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
+                align-content: center;
                 width: 60%;
                 a {
                   display: block;
@@ -204,6 +206,7 @@
           width: 70%;
           .showInfos {
             .infoContent {
+              width: 80%;
               padding: 0.5rem;
               margin-block-start: 50px;
               .head {
@@ -215,7 +218,6 @@
                   font-size: 20px;
                 }
                 .linkContent {
-                  flex-direction: column;
                   a {
                     font-size: 14px;
                   }
@@ -234,6 +236,29 @@
   }
 }
 @media screen and (max-width: 425px) {
+  .portfolio {
+    .portfolioContent {
+      .projects {
+        .project {
+          .showInfos {
+            .infoContent {
+              width: 90%;
+              margin-block-start: 15px;
+              .head {
+                flex-direction: column;
+                .linkContent {
+                  width: 100%;
+                  justify-content: space-between;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (orientation: landscape) {
   .portfolio {
     .portfolioContent {
       .projects {
