@@ -267,6 +267,12 @@
             .infoContent {
               margin-block-start: 15px;
               width: 80%;
+              padding: 0.5rem;
+              p {
+                margin-top: 0.4rem;
+                margin-bottom: 0.4rem;
+                font-size: 14px;
+              }
             }
           }
         }
