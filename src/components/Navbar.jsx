@@ -14,32 +14,32 @@ const Navbar = () => {
       <div className="sidebar">
         <div className="profil">
           <div className="profilContent">
-            <img src="./profil.jpg" alt="profil" />
+            <img src="./profil.jpg" alt="profil" width="133" height="133" />
             <h3>Jérôme Nivoix</h3>
           </div>
         </div>
         <div className="navigation">
           <ul>
             <li>
-              <NavLink to="/">
+              <NavLink to="/" aria-label="home page">
                 <FaHome />
                 <span>Accueil</span>
               </NavLink>
             </li>
             <li>
-              <NavLink to="/competences">
+              <NavLink to="/competences" aria-label="knowledges page">
                 <IoSchool />
                 <span>Compétences</span>
               </NavLink>
             </li>
             <li>
-              <NavLink to="/portfolio">
+              <NavLink to="/portfolio" aria-label="portfolio page">
                 <IoBriefcaseSharp />
                 <span>Portfolio</span>
               </NavLink>
             </li>
             <li>
-              <NavLink to="/Contact">
+              <NavLink to="/Contact" aria-label="contact page">
                 <FaAddressBook />
                 <span>Contact</span>
               </NavLink>

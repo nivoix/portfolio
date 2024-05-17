@@ -435,7 +435,7 @@
 @media screen and (max-height: 300px) {
   @media (orientation: landscape) {
     .knowledges {
-      height: 230;
+      height: 100%;
       .knowledgesContent {
         min-height: 206vh;
       }
