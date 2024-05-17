@@ -114,10 +114,11 @@
           }
           .infoContent {
             margin: 0 auto;
-            margin-block-start: 180px;
+            margin-block-start: 8%;
             padding: 1.5rem;
             width: 70%;
             height: auto;
+            min-height: 200px;
             background-color: #000000;
             border-radius: $borderRadius;
             border: $border-card;
@@ -151,6 +152,7 @@
               margin-top: 1.6rem;
               margin-bottom: 1.6rem;
               width: 94%;
+              font-size: 20px;
             }
           }
         }
@@ -185,6 +187,9 @@
           .showInfos {
             .infoContent {
               margin-block-start: 110px;
+              p {
+                font-size: 14px;
+              }
             }
           }
         }
@@ -208,7 +213,7 @@
             .infoContent {
               width: 80%;
               padding: 0.5rem;
-              margin-block-start: 50px;
+              margin-block-start: 25%;
               .head {
                 width: 100%;
                 display: flex;
@@ -243,7 +248,6 @@
           .showInfos {
             .infoContent {
               width: 90%;
-              margin-block-start: 15px;
               .head {
                 flex-direction: column;
                 .linkContent {
@@ -265,7 +269,7 @@
         .project {
           .showInfos {
             .infoContent {
-              margin-block-start: 15px;
+              margin-block-start: 12%;
               width: 80%;
               padding: 0.5rem;
               p {

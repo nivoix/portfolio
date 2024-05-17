@@ -27,7 +27,6 @@ $min-height: 100vh;
   justify-content: center;
   align-items: center;
 }
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -102,5 +101,16 @@ a:visited {
   @media screen and (max-width: 850px) {
     margin-left: 0 !important;
     min-height: 100vh;
+  }
+}
+@media screen and (max-width: 850px) {
+  .homeContent,
+  .knowledgesContent,
+  .portfolioContent,
+  .contactContent {
+    &:after {
+      content: "";
+      background: url(/homeCompress-small.jpg) no-repeat center/cover;
+    }
   }
 }

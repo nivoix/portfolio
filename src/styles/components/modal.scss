@@ -25,6 +25,9 @@
     );
     box-shadow: $shadow-card;
     display: flex;
+    @media (orientation: landscape) {
+      transform: translate(0%, 45%);
+    }
     #modalTitle {
       color: $white;
       font-size: 2rem;

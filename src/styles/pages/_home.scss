@@ -73,9 +73,6 @@
   .home {
     .homeContent {
       min-height: 93vh;
-      &:after {
-        background: url(/home.jpg) no-repeat 60% 50% / cover !important;
-      }
       .content {
         width: 85%;
         h1 {
