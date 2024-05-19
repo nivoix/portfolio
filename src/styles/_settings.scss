@@ -10,7 +10,7 @@ $black-background: #000000;
 // $black-background: #2522bc;
 $black-background-card: #000000;
 // $black-background-card: #000000b8;
-// $black-background-card: #00000000;
+// $black-background-card: #2522bc;
 $border-card: 1px solid $white;
 
 $borderRadius: 25px;
@@ -93,7 +93,7 @@ a:visited {
     left: 4%;
     height: 100%;
     width: inherit;
-    background: url(/homeCompress.jpg) no-repeat center/cover;
+    background: url(/homeCompress.webp) no-repeat center/cover;
     z-index: -1;
     filter: brightness(30%);
   }
@@ -109,7 +109,7 @@ a:visited {
   .contactContent {
     &:after {
       content: "";
-      background: url(/homeCompress-small.jpg) no-repeat center/cover;
+      background: url(/homeCompress-small.webp) no-repeat center/cover;
     }
   }
 }

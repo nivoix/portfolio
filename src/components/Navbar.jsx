@@ -14,7 +14,7 @@ const Navbar = () => {
       <div className="sidebar">
         <div className="profil">
           <div className="profilContent">
-            <img src="./profil.jpg" alt="profil" width="133" height="133" />
+            <img src="./profil.webp" alt="profil" width="133" height="133" />
             <h3>Jérôme Nivoix</h3>
           </div>
         </div>
@@ -87,9 +87,6 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      {/* <main>
-        <Outlet />
-      </main> */}
     </>
   );
 };
